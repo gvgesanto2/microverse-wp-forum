@@ -1,0 +1,56 @@
+.m-portrait {
+  position: relative;
+  margin: 13.33% 0 0 13.33%;
+
+  // screen-md = 48em = 768px
+  @include respond-to('min', 'screen-md') {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13.33%;
+    left: -13.33%;
+    height: 53.33%;
+    width: 53.33%;
+    background: url('../assets/images/backgrounds/chess-shape.gif') center center/cover;
+  }
+
+  &__img-box {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: all 0.5s;
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $white;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 10;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    transform: scale(1.2);
+    filter: blur(3px) brightness(80%);
+  }
+}

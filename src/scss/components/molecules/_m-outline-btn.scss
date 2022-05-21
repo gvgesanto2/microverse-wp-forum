@@ -1,0 +1,25 @@
+.m-outline-btn {
+  width: 100%;
+  font-size: 1.6rem;
+  color: $grey-dark-1;
+  padding: 1.2rem 0;
+  border: 1px solid $grey-light-1;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
+
+  svg {
+    color: $color-primary;
+    margin-left: 0.6rem;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $grey-dark-2;
+    color: white;
+
+    svg {
+      color: $white;
+    }
+  }
+}

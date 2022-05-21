@@ -1,0 +1,77 @@
+.o-header {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  filter: drop-shadow(0 0 16px rgba($black, 0.24));
+
+  // screen-lg = 64em = 1024px
+  @include respond-to('min', 'screen-lg') {
+    display: block;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 3rem;
+    font-size: 1.4rem;
+    background-color: $grey-dark-2;
+    padding: 0 $homepage-x-padding-desktop;
+
+    // screen-xlg = 90em = 1440px
+    @include respond-to('min', 'screen-xlg') {
+      padding-left: $homepage-x-padding-desktop-lg;
+      padding-right: $homepage-x-padding-desktop-lg;
+    }
+
+    a {
+      color: $white;
+      transition: all 0.2s;
+    }
+  }
+
+  &__social > *:first-child {
+    margin-right: 1rem;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+    background-color: $white;
+    padding: 0 $homepage-x-padding-desktop;
+
+    // screen-xlg = 90em = 1440px
+    @include respond-to('min', 'screen-xlg') {
+      padding-left: $homepage-x-padding-desktop-lg;
+      padding-right: $homepage-x-padding-desktop-lg;
+    }
+  }
+
+  &__nav {
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    a {
+      color: $grey-dark-2;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__top a:hover {
+    opacity: 0.9;
+  }
+
+  &__about-link {
+    padding: 0.8rem 1.6rem;
+    border: 4px solid $color-primary;
+  }
+}

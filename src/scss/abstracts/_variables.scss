@@ -1,0 +1,64 @@
+:root {
+  // Section-header
+  --section-header-underline-width: 5rem;
+  --section-header-underline-width-sm: 3rem;
+}
+
+// Color Palette
+$color-primary-light: #ec958c;
+$color-primary: #ec5242;
+$color-primary-dark: #ec1c05;
+$grey-light-1: #d3d3d3;
+$grey-light-2: #f5f5f5;
+$grey-light-3: #f9f9f9;
+$grey-dark-1: #272a31;
+$grey-dark-2: #555;
+$grey-dark-3: #424145;
+$white: #fff;
+$black: #000;
+
+// Other color variables
+$text-primary: $grey-dark-1;
+
+// Padding
+$homepage-x-padding-desktop-hg: 15vw;
+$homepage-x-padding-desktop-xlg: 20.5vw;
+$homepage-x-padding-desktop-lg: 12vw;
+$homepage-x-padding-desktop: 5.12vw;
+$homepage-x-padding-mobile: 2rem;
+$sections-y-padding-mobile: 4rem;
+
+// Navigation Icon
+$navigation-icon-gap: 0.8rem;
+
+// Header
+$header-height: 10rem;
+
+// Breakpoints
+$breakpoints: (
+  // 15.625em = 250px
+  'screen-xxsm': 15.625em,
+  // 22.5em = 360px
+  'screen-xsm': 22.5em,
+  // 28.75em = 460px
+  'screen-sm': 28.75em,
+  // 42.5em = 680px
+  'screen-md': 42.5em,
+  // 64em = 1024px
+  'screen-lg': 64em,
+  // 90em = 1440px
+  'screen-xlg': 90em,
+  // 100em = 1600px
+  'screen-xxlg': 100em,
+  // 160em = 2560px
+  'screen-hg': 160em,
+  // 93.75em = 1500px
+  'screen-xhg': 93.75em,
+  // 100em = 1600px
+  'screen-xxhg': 100em
+);
+
+$bp-types: (
+  'max': max-width,
+  'min': min-width,
+);

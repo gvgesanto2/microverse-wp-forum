@@ -1,0 +1,77 @@
+.a-logo {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $color-primary;
+  -webkit-font-smoothing: antialiased;
+  text-align: start;
+
+  &__img {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1.2rem;
+  }
+
+  &__big-text {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: $grey-dark-1;
+  }
+
+  &--sm {
+    font-size: 1.4rem;
+
+    .a-logo__img {
+      width: 4.25rem;
+      height: 4.25rem;
+      margin-right: 1rem;
+    }
+
+    .a-logo__big-text {
+      font-size: 2rem;
+    }
+  }
+
+  &--lg {
+    // font-size: 2.25rem;
+    font-size: 5vw;
+
+    // screen-sm = 28.75em = 460px
+    @include respond-to('min', 'screen-sm') {
+      font-size: 2.25rem;
+    }
+
+    .a-logo__img {
+      // width: 7rem;
+      width: 15.55vw;
+      height: 15.55vw;
+
+      // screen-sm = 28.75em = 460px
+      @include respond-to('min', 'screen-sm') {
+        width: 7rem;
+        height: 7rem;
+      }
+    }
+
+    .a-logo__big-text {
+      // font-size: 3.35rem;
+      font-size: 7.45vw;
+
+      // screen-sm = 28.75em = 460px
+      @include respond-to('min', 'screen-sm') {
+        font-size: 3.35rem;
+      }
+    }
+  }
+
+  &--light {
+    color: $white;
+
+    .a-logo__big-text {
+      color: $white;
+    }
+  }
+}

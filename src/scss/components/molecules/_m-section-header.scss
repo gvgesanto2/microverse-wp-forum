@@ -1,0 +1,21 @@
+.m-section-header {
+  position: relative;
+  padding-bottom: 1.5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: calc(50% - (var(--section-header-underline-width) / 2));
+    height: 2px;
+    width: var(--section-header-underline-width);
+    background-color: $color-primary;
+  }
+
+  &--sm {
+    &::after {
+      width: var(--section-header-underline-width-sm);
+      left: calc(50% - (var(--section-header-underline-width-sm) / 2));
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.a-navigation-icon {
+  position: relative;
+
+  &,
+  &::before,
+  &::after {
+    display: inline-block;
+    width: 3rem;
+    height: 2px;
+    background-color: $grey-dark-3;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+  }
+
+  &::before {
+    top: -($navigation-icon-gap);
+  }
+
+  &::after {
+    top: $navigation-icon-gap;
+  }
+}

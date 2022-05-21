@@ -1,0 +1,17 @@
+.a-text-block {
+  max-width: 60rem;
+  font-size: 1.4rem;
+  background-color: $grey-light-2;
+  color: $grey-dark-1;
+  border: 3px solid $white;
+  padding: 2rem 1.5rem;
+
+  &--lg {
+    max-width: 90rem;
+  }
+
+  &--light {
+    border: 2px solid $grey-light-1;
+    background-color: $white;
+  }
+}

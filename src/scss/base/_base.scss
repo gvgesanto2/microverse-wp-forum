@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('../assets/fonts/cocogoose/cocogoose_thin.ttf');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('../assets/fonts/cocogoose/cocogoose_light.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('../assets/fonts/cocogoose/cocogoose_regular.otf');
+  font-weight: bold;
+}
+
+html {
+  font-size: 52.25%;
+  box-sizing: border-box;
+
+  // screen-xsm = 22.5em = 360px
+  @include respond-to('min', 'screen-xsm') {
+    font-size: 62.5%;
+  }
+
+  // screen-hg = 160em = 2560px
+  @include respond-to('min', 'screen-hg') {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: $text-primary;
+}
+
+a {
+  text-decoration: none;
+  color: $text-primary;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+svg {
+  color: inherit;
+  fill: currentColor;
+}

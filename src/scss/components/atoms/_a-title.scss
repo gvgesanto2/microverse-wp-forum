@@ -1,0 +1,111 @@
+.a-title {
+  font-family: 'Cocogoose', sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 3.5rem;
+  color: $color-primary;
+  -webkit-font-smoothing: antialiased;
+
+  // screen-xsm = 22.5em = 360px
+  @include respond-to('min', 'screen-xsm') {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  // screen-md = 42.5em = 680px
+  @include respond-to('min', 'screen-md') {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  // screen-lg = 64em = 1024px
+  @include respond-to('min', 'screen-lg') {
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+
+  // screen-xlg = 90em = 1440px
+  @include respond-to('min', 'screen-xlg') {
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+
+  &--sm {
+    font-size: 1.925rem;
+    line-height: 1.925rem;
+    font-weight: bold;
+
+    // screen-xsm = 22.5em = 360px
+    @include respond-to('min', 'screen-xsm') {
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+    }
+
+    // screen-md = 42.5em = 680px
+    @include respond-to('min', 'screen-md') {
+      font-size: 3.3rem;
+      line-height: 3.3rem;
+    }
+
+    // screen-lg = 64em = 1024px
+    @include respond-to('min', 'screen-lg') {
+      font-size: 3.85rem;
+      line-height: 3.85rem;
+    }
+
+    // screen-xlg = 90em = 1440px
+    @include respond-to('min', 'screen-xlg') {
+      font-size: 4.4rem;
+      line-height: 4.4rem;
+    }
+  }
+
+  &--md {
+    font-size: 2.1875rem;
+    line-height: 2.1875rem;
+    font-weight: normal;
+
+    // screen-xsm = 22.5em = 360px
+    @include respond-to('min', 'screen-xsm') {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+
+    // screen-md = 42.5em = 680px
+    @include respond-to('min', 'screen-md') {
+      font-size: 3.75rem;
+      line-height: 3.75rem;
+    }
+
+    // screen-lg = 64em = 1024px
+    @include respond-to('min', 'screen-lg') {
+      font-size: 4.375rem;
+      line-height: 4.375rem;
+    }
+
+    // screen-xlg = 90em = 1440px
+    @include respond-to('min', 'screen-xlg') {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--blended {
+    background: url('../assets/images/backgrounds/title-bg.jpg') center center/cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &--dark {
+    color: $grey-dark-2;
+  }
+}

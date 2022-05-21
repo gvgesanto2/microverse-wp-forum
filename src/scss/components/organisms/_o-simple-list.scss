@@ -1,0 +1,19 @@
+.o-simple-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  // screen-lg = 64em = 1024px
+  @include respond-to('min', 'screen-lg') {
+    flex-direction: row;
+  }
+
+  &--md {
+    gap: 2rem;
+
+    // screen-lg = 64em = 1024px
+    @include respond-to('min', 'screen-lg') {
+      gap: 3rem;
+    }
+  }
+}

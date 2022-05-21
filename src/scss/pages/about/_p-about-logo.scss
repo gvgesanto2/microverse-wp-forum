@@ -1,0 +1,20 @@
+.p-about-logo {
+  background-color: $white;
+  border-top: 1px solid $grey-light-1;
+  border-bottom: 1px solid $grey-light-1;
+
+  &__logo-box {
+    // @include centerWithFlex;
+    // width: 42rem;
+    // height: 14rem;
+    background-color: $white;
+    border: 1px solid $grey-light-1;
+    // padding: 3rem 5rem;
+    padding: 4.46vw 8.93vw;
+
+    // screen-sm = 28.75em = 460px
+    @include respond-to('min', 'screen-sm') {
+      padding: 3rem 5rem;
+    }
+  }
+}

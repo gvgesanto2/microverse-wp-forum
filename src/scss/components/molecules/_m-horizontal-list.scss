@@ -1,0 +1,12 @@
+.m-horizontal-list {
+  display: flex;
+  align-items: center;
+
+  & > *:not(:last-child) {
+    margin-right: 3.5rem;
+  }
+
+  &--sm > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+}

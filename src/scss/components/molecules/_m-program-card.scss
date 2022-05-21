@@ -1,0 +1,54 @@
+.m-program-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba($white, 0.1);
+  border: 1px solid transparent;
+  padding: 1.6rem 1.2rem 1.6rem 2rem;
+  transition: border-color 0.2s;
+  text-align: center;
+  gap: 0.8rem;
+
+  // screen-xsm = 22.5em = 360px
+  @include respond-to('min', 'screen-xsm') {
+    text-align: initial;
+    gap: 1.6rem;
+    flex-direction: row;
+  }
+
+  @include respond-to('min', 'screen-lg') {
+    flex-direction: column;
+    max-width: 20.5rem;
+    text-align: center;
+  }
+
+  &:hover {
+    border-color: $white;
+  }
+
+  &__img {
+    width: 6.4rem;
+  }
+
+  &__title {
+    // screen-xsm = 22.5em = 360px
+    @include respond-to('min', 'screen-xsm') {
+      width: 30%;
+    }
+
+    @include respond-to('min', 'screen-lg') {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    @include respond-to('min', 'screen-xsm') {
+      width: 50%;
+    }
+
+    @include respond-to('min', 'screen-lg') {
+      width: 100%;
+    }
+  }
+}

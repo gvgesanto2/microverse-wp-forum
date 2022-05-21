@@ -1,0 +1,22 @@
+.a-text {
+  max-width: 90rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $grey-dark-1;
+
+  &--light {
+    color: $grey-light-2;
+  }
+
+  &--primary {
+    color: $color-primary;
+  }
+
+  &--sm {
+    font-size: 1.5rem;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+}
