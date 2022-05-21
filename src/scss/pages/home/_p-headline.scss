@@ -1,0 +1,49 @@
+.p-headline {
+  background:
+    linear-gradient(
+      to right bottom,
+      rgba($grey-light-3, 0.6),
+      rgba($grey-light-1, 0.6)
+    ),
+    url('../assets/images/backgrounds/headline-bg.png') center center/cover;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+
+  // screen-lg = 64em = 1024px
+  @include respond-to('min', 'screen-lg') {
+    justify-content: center;
+    height: 100vh;
+    padding-top: $header-height;
+    padding-bottom: 0;
+  }
+
+  &__content {
+    width: 100%;
+
+    & > *:not(:last-child) {
+      margin-bottom: 3rem;
+
+      // screen-xlg = 90em = 1440px
+      @include respond-to('min', 'screen-xlg') {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  &__headings {
+    & > *:first-child {
+      margin-bottom: 1.25rem;
+
+      // screen-xlg = 90em = 1440px
+      @include respond-to('min', 'screen-xlg') {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__event-location {
+    color: $grey-dark-2;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+}

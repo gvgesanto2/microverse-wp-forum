@@ -1,0 +1,10 @@
+.p-speakers {
+  background-color: $grey-light-2;
+
+  &__btn {
+    // screen-lg = 64em = 1024px
+    @include respond-to('min', 'screen-lg') {
+      display: none;
+    }
+  }
+}

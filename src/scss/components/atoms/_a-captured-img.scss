@@ -1,0 +1,62 @@
+.a-captured-img {
+  height: 20rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s;
+
+  // screen-sm = 28.75em = 460px
+  @include respond-to('min', 'screen-sm') {
+    width: 40rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-primary, 0.7);
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+  }
+
+  &__caption {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: $white;
+    transition: all 0.4s;
+  }
+
+  &__primary-info {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &:hover {
+    transform: translateY(-0.2rem) scale(1.1);
+    box-shadow: 0 1rem 2rem rgba($black, 0.2);
+
+    .a-captured-img__img {
+      transform: scale(1.2);
+    }
+
+    .a-captured-img__text {
+      transform: scale(1.2);
+    }
+  }
+}

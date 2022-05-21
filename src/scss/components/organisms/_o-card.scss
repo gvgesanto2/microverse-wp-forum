@@ -1,0 +1,54 @@
+.o-card {
+  display: flex;
+  column-gap: 2rem;
+  transition: transform 2s;
+
+  // screen-lg = 64em = 1024px
+  @include respond-to('min', 'screen-lg') {
+    max-width: 55rem;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    position: relative;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      height: 2px;
+      width: 2rem;
+      background-color: $grey-light-1;
+    }
+  }
+
+  &__left-content {
+    @include respond-to('min', 'screen-md') {
+      width: 17.266rem;
+      height: 17.266rem;
+    }
+  }
+
+  &__right-content {
+    flex: 0 0 60%;
+
+    // screen-md = 48em = 768px
+    @include respond-to('min', 'screen-md') {
+      flex: 1;
+    }
+  }
+
+  &--is-hidden {
+    display: none;
+
+    // screen-lg = 64em = 1024px
+    @include respond-to('min', 'screen-lg') {
+      display: flex;
+    }
+  }
+}

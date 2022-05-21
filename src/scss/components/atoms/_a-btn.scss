@@ -1,0 +1,11 @@
+.a-btn {
+  font-size: 1.8rem;
+  color: $white;
+  background-color: $color-primary;
+  padding: 2.4rem 4.8rem;
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

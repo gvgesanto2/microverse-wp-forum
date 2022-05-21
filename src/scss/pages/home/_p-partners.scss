@@ -1,0 +1,21 @@
+.p-partners {
+  background-color: $grey-dark-2;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+
+    img {
+      width: auto;
+      height: 5rem;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: translateY(-0.8rem) scale(1.3);
+      }
+    }
+  }
+}

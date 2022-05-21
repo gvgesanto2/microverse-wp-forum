@@ -1,0 +1,11 @@
+.a-headings-group {
+  & > *:first-child {
+    margin-bottom: 1rem;
+  }
+
+  &--md {
+    & > *:first-child {
+      margin-bottom: 1.8rem;
+    }
+  }
+}

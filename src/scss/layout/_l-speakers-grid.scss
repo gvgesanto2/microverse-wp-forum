@@ -1,0 +1,11 @@
+.l-speakers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: $sections-y-padding-mobile;
+
+  // screen-lg = 64em = 1024px
+  @include respond-to('min', 'screen-lg') {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+}
