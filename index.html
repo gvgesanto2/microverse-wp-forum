@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <title>Home - World Poker Forum</title>
+  </head>
+  <body id="home">
+    <div id="hamburger-menu" class="o-hamburger-menu">
+      <button aria-label="Open navigation menu" type="button" id="hamburger-btn" class="o-hamburger-menu__btn">
+        <span class="a-navigation-icon">&nbsp;</span>
+      </button>
+
+      <div class="o-hamburger-menu__background">&nbsp;</div>
+
+      <nav class="o-hamburger-menu__nav">
+        <ul class="o-hamburger-menu__nav-list m-vertical-list">
+          <li>
+            <a class="o-hamburger-menu__link" href="index.html#home"><span>01</span>Home</a>
+          </li>
+          <li>
+            <a class="o-hamburger-menu__link" href="index.html#program"><span>02</span>Program</a>
+          </li>
+          <li>
+            <a class="o-hamburger-menu__link" href="index.html#speakers"><span>03</span>Speakers</a>
+          </li>
+          <li>
+            <a class="o-hamburger-menu__link" href="index.html#partners"><span>04</span>Partners</a>
+          </li>
+          <li>
+            <a class="o-hamburger-menu__link" href="about.html#about"><span>05</span>About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="l-container">
+      <header class="o-header">
+        <div class="o-header__top">
+          <ul class="m-horizontal-list m-horizontal-list--sm">
+            <li>
+              <div class="o-header__social">
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://github.com/gvgesanto2"
+                  aria-label="Go to your Github profile"
+                >
+                  <svg class="a-icon--sm">
+                    <use xlink:href="src/assets/images/icons/sprite.svg#github"></use>
+                  </svg>
+                </a>
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://twitter.com/GabrielSanto997"
+                  aria-label="Go to your Twitter profile"
+                >
+                  <svg class="a-icon--sm">
+                    <use xlink:href="src/assets/images/icons/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li>
+              <a href="#">English</a>
+            </li>
+            <li>
+              <a href="#">My Page</a>
+            </li>
+            <li>
+              <a href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+        <div class="o-header__bottom">
+          <a href="index.html#home">
+            <div class="a-logo a-logo--sm">
+              <img class="a-logo__img" src="src/assets/images/icons/poker-chip.svg" alt="" />
+              <span
+                >world poker<br /><span class="a-logo__big-text"
+                  >forum 2022</span
+                ></span
+              >
+            </div>
+          </a>
+
+          <nav class="o-header__nav">
+            <ul class="m-horizontal-list">
+              <li>
+                <a href="index.html#home">Home</a>
+              </li>
+              <li>
+                <a href="index.html#program">Program</a>
+              </li>
+              <li>
+                <a href="index.html#speakers">Speakers</a>
+              </li>
+              <li>
+                <a href="index.html#partners">Partners</a>
+              </li>
+              <li>
+                <a class="o-header__about-link" href="about.html#about">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="p-headline l-section">
+        <div class="p-headline__content">
+          <hgroup class="p-headline__headings">
+            <h2 class="a-title a-title--md">"Hello! Let's play poker!"</h2>
+            <h1 class="a-title a-title--uppercase a-title--blended">
+              World Poker <br />
+              Forum 2022
+            </h1>
+          </hgroup>
+          <p class="a-text-block">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi eos
+            quam illo fugiat laborum, repellendus cupiditate aliquid commodi
+            quis minus!
+          </p>
+          <div class="p-headline__event-info">
+            <h3 class="a-title a-title--sm a-title--dark">
+              2022.10.15(THU) ~ 16(FRI)
+            </h3>
+            <p class="p-headline__event-location">@ Florianopolis, Santa Catarina, Brazil</p>
+          </div>
+        </div>
+      </section>
+      <section id="program" class="p-program l-section">
+        <header class="m-section-header">
+          <h3 class="a-heading a-heading--light">Main Program</h3>
+        </header>
+        <button type="button" class="a-btn">Join World Poker Forum 2022</button>
+      </section>
+      <section id="speakers" class="p-speakers l-section">
+        <header class="m-section-header">
+          <h3 class="a-heading">Featured Speakers</h3>
+        </header>
+
+        <button aria-label="Show more" type="button" id="speakers-section-btn" class="m-outline-btn p-speakers__btn">
+          <span>more</span>
+          <svg class="a-icon--md">
+            <use xlink:href="src/assets/images/icons/sprite.svg#chevron-down"></use>
+          </svg>
+        </button>
+      </section>
+      <section id="partners" class="p-partners l-section">
+        <header class="m-section-header">
+          <h3 class="a-heading a-heading--light">Partners</h3>
+        </header>
+        <ul class="p-partners__list">
+          <li><img src="src/assets/images/pokerstars-logo.png" alt="" /></li>
+          <li><img src="src/assets/images/titan-poker-logo.png" alt="" /></li>
+          <li><img src="src/assets/images/888poker-logo.png" alt="" /></li>
+          <li><img src="src/assets/images/bsop-logo.jpg" alt="" /></li>
+          <li><img src="src/assets/images/wsop-logo.png" alt="" /></li>
+        </ul>
+      </section>
+      <footer class="o-footer">
+        <a href="index.html#home">
+          <div class="a-logo">
+            <img class="a-logo__img" src="src/assets/images/icons/poker-chip.svg" alt="" />
+            <span
+              >world poker<br /><span class="a-logo__big-text"
+                >forum 2022</span
+              ></span
+            >
+          </div>
+        </a>
+        <div class="o-footer__text">
+          <p class="o-footer__copyright">
+            2022 World Poker Forum. All Rights Reserved.
+          </p>
+          <p class="o-footer__about-text">
+            World Poker Forum is founded by the Global Poker Foundation.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="src/scripts/index.js"></script>
+  </body>
+</html>
